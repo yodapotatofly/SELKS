@@ -15,4 +15,4 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag scirius:$(date +%s)
-      working-directory: docker
+      working-directory: scirius/docker
